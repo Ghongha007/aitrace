@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aitrace"
+version = "0.1.0"
+description = "Look inside an image or video for traces of AI generation: Content Credentials, generator settings, declared source type"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+keywords = ["osint", "verification", "c2pa", "content-credentials", "synthetic-media", "journalism"]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/Ghongha007/aitrace"
+Issues = "https://github.com/Ghongha007/aitrace/issues"
+
+[project.scripts]
+aitrace = "aitrace.cli:main"
+
+[tool.setuptools]
+packages = ["aitrace"]
