@@ -47,6 +47,12 @@ pip install .
 
 Or run it without installing: `python3 -m aitrace <file>` from inside the folder.
 
+Two sample files are in [`examples/`](examples/) so you can try it straight away:
+
+```
+aitrace examples/sample_with_ai_settings.png examples/sample_no_metadata.jpg
+```
+
 ```
 aitrace photo.jpg            report on one file
 aitrace *.png -v             several files, plus the metadata that was read
