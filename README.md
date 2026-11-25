@@ -118,6 +118,7 @@ python3 -m unittest discover -s tests
 - [ai-for-osint](https://github.com/Ghongha007/ai-for-osint): AI tools for investigators, with where each runs and its known limits
 - [india-osint](https://github.com/Ghongha007/india-osint): public records and open data for investigating stories in India
 - [chat2net](https://github.com/Ghongha007/chat2net): turn a chat or social-media export into a Gephi network
+- [osint-visuals](https://github.com/Ghongha007/osint-visuals): agent skills for evidence graphics: ship and flight tracks, shadow diagrams, 3D scenes, satellite before/after and scroll stories
 
 ## Licence
 
