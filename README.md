@@ -11,6 +11,8 @@ Look inside an image or video for traces of how it was made.
 
 It is a first-pass triage tool. It works offline, needs only Python 3.10 or newer, and uploads nothing.
 
+**Try it in your browser:** [huggingface.co/spaces/Ghongha007/aitrace](https://huggingface.co/spaces/Ghongha007/aitrace). The demo runs aitrace's own code inside the browser, so the file is not uploaded.
+
 ## What it is not
 
 **It is not a deepfake detector.** It does not look at the picture, and it gives no "probability of AI". Published tests show that pixel-based detectors lose much of their accuracy on real-world media, so this tool reports only what can be read and checked.
@@ -92,7 +94,7 @@ The first run on real files found one false match (a product name matched by cha
 - **Invisible watermarks are not checked.** SynthID and similar marks live in the pixels or audio and need the maker's own detector.
 - **Every signal here can be removed, and most can be faked.** Stripping metadata is trivial and usually automatic. Adding a false camera tag or a false "AI-generated" label takes one command. Treat the result as a lead to confirm, never as proof.
 - **Absence means nothing.** No signal does not mean real, and it does not mean fake.
-- **HEIC, AVIF, WebP and video files are scanned more simply** than JPEG and PNG, and have had little or no testing on real files.
+- **HEIC, AVIF, GIF and video files are scanned more simply** than JPEG, PNG and WebP, and have had little or no testing on real files. WebP is read in full but has also had little testing.
 - **It cannot tell you that an image is real.** Nothing that reads metadata can.
 
 ## Using it in a verification workflow
